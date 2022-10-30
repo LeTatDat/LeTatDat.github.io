@@ -201,7 +201,7 @@ section .noi-dung .form-dang-nhap .icon-dang-nhap li i{
     }
 }
 
-@media (max-width: 576) {
+@media (max-width: 342px) {
     section .img-bg{
         position: absolute;
         top: 0;
