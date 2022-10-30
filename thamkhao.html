@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopping-cart</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+     <link rel="stylesheet" href="style.css" /> 
+     <link rel="stylesheet" href="reponsive.css" /> 
+   <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <nav>
+            <!-- bắt đầu nav-mobile -->
+            <div class="nav-mobile">
+                <div class="icon-mobile" id="btnmenu">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+                <div class="item_menu" id="menutop">
+                    <ul>
+                    <li><a href="TrangChu/trangchu.html">Trang Chủ</a></li>
+                    <li><a href="khuyenmai.html">Hàng giảm giá</a></li>
+                    <li><a href="Login&Sign-Up/Login.html">Tài khoản</a></li>
+                    </ul>
+                    <form>
+                        <input type="text" name="search" placeholder="Tìm kiếm sản phẩm..." />
+                        <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </form>
+                </div>
+            </div> 
+            <!-- kết thúc nav-mobile -->
+            </div>
+            <div class="content-nav">
+                <ul>
+                    <li class="logo">
+                        <a href="">
+                            <img src="images/logo1.png" style="width: 80px; margin-left: -100px; " >
+                        </a>
+                    </li>
+                        <li>
+                        <a href="trangchu.html">
+                            <img src="images/icon1.PNG">
+                            Trang chủ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="khuyenmai.html">
+                            <img src="images/icon4.PNG">
+                              Hàng giảm giá 
+                        </a>
+                    </li>
+                  
+                    <li>
+                        <a href="login.html">
+                            <img src="images/icon5.PNG">
+                            Tài khoản
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="down">
+                <div class="search">
+                <form>
+                    <input type="text" name="search" placeholder="Tìm kiếm sản phẩm..." />
+                   <button>
+                        <img src="images/search.png">
+                    </button>
+                </form>
+            </div>
+             <button id="cart">
+                <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                <b>Giỏ Hàng</b>
+            </button>
+        </div>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Giỏ Hàng</h5>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="cart-row">
+                            <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                            <span class="cart-price cart-header cart-column">Giá</span>
+                            <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                        </div>
+                        <div class="cart-items">
+                           
+                        </div>
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Tổng Cộng:</strong>
+                            <span class="cart-total-price">0VNĐ</span>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                        <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <!-- content -->
+    <section class="wrapper">
+        <div class="products">
+            <ul>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="images\nam.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Nấm kim châm</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">9900<sup>đ</sup></span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="images\cangu.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Cá ngừ</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">500000<sup>đ</sup></span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="images\c.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Rau</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">5000<sup>đ</sup></span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="images\dohop.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Đồ Hộp</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">15000<sup>đ</sup></span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="images\haohao.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Mì Hảo Hảo
+                        </h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">4000<sup>đ</sup></span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="images\sting.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Sting</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">12000<sup>đ</sup></span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="images\pesi.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Pepsi</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">19500<sup>đ</sup></span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="images\haohaox.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Mì Hảo Hảo xào</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">3900<sup>đ</sup></span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <div class="footer-item">
+            <div class="img-footer">
+                <img src="img/logo.png" alt="" />
+            </div>
+            <div class="social-footer">
+                <li><a target="_blank" href="https://www.facebook.com/phuc.vandanh.16">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </a></li>
+                <li><a target="_blank" href="">
+                        <i class="fa fa-github-square" aria-hidden="true"></i>
+                    </a></li>
+
+            </div>
+        </div>
+    </footer>
+    <!-- script -->
+     <script src="js.js">
+    </script> 
+</body>
+
+</html>
