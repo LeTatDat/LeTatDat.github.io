@@ -201,13 +201,9 @@ section .noi-dung .form-dang-nhap .icon-dang-nhap li i{
     }
 }
 
-@media (max-width: 342px) {
+@media (max-width: 350px) {
     section .img-bg{
-        position: absolute;
-        top: 0;
-        left: 0;
-        max-width: 100%;
-        height: 100%;
+        display: none;
     }
     section .noi-dung .form-dang-nhap #input-form button {
         display: flex;
@@ -229,7 +225,6 @@ section .noi-dung .form-dang-nhap .icon-dang-nhap li i{
     }
     section .noi-dung .form-dang-nhap{
         width: 100%;
-        padding: 40px;
         background: rgba(255 255 255 / 0.9);
         margin: 50px;
     }
