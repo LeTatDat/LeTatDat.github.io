@@ -21,7 +21,7 @@
   padding: 50px;
 }
 .menu{
-	width: 100%;
+	width: auto;
 	height: 120px;
 	background-color: rgb(255, 186, 0);
 }
@@ -112,7 +112,7 @@ img{
 	width: 1000px;
 }
 #footer {
-    width: 88%;
+    width: auto;
     background:rgb(0,0,0,0.79);
     height: 322px;
     margin-top:338px;
