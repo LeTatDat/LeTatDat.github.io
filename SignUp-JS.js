@@ -32,7 +32,7 @@ function login(e) {
     }
     else if (username==data.username && Email == data.Email && password==data.password) {
         alert("Đăng nhập thành công")
-        window.location.href="../TrangChu/trangchu.html"
+        window.location.href="trangchu.html"
     }
     else {
         alert("Đăng nhập thất bại")
