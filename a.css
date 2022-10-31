@@ -21,6 +21,9 @@
 	list-style: none;
 	margin-top: 0px;
 	margin-left: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
 }
 .up ul li{
 	display: inline-block;
@@ -98,14 +101,18 @@
 
 
 .box{
+    text-align: center;
 	margin-top :80px ;
     position: relative ;
-    margin-left: 500px;
+    margin-left: auto;
+    align-items: center; 
+    margin-right: auto;
     width: 180px;
     height: 180px;
     transform-style: preserve-3d ;
     animation: animate 20s linear infinite;
 }
+
 @keyframes animate {
     0%{
         transform: perspective(1000px) rotateY(0deg);
