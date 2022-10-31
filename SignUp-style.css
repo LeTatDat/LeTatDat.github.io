@@ -22,12 +22,12 @@ button:hover {
 .cancelbtn {
   border-right: #f1f1f1;
   padding: 14px 20px;
-  background-color: rgb(255, 186, 0);
+  background-color: red;
 }
 
 .signupbtn {
   padding: 14px 20px;
-  background-color: rgb(255, 186, 0);
+  background-color: lightgreen;
 }
 /* Float cancel and signup buttons and add an equal width */
 .cancelbtn, .signupbtn {
