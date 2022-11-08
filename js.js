@@ -22,8 +22,7 @@ window.onclick = function (event) {
   }
 }
 
-// Giỏ Hàng Of thanhlongcart
-
+// Giỏ Hàng
 // xóa cart
 var remove_cart = document.getElementsByClassName("btn-danger");
 for (var i = 0; i < remove_cart.length; i++) {
