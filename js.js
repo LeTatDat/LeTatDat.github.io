@@ -1,38 +1,21 @@
 // Modal
 var modal = document.getElementById("myModal");
 var btn = document.getElementById("cart");
-var close = document.getElementsByClassName("close")[0];
 var close_footer = document.getElementsByClassName("close-footer")[0];
 var order = document.getElementsByClassName("order")[0];
+//hien gio hang khi bam vo
 btn.onclick = function () {
   modal.style.display = "block";
 }
-close.onclick = function () {
-  modal.style.display = "none";
-}
+//thao tac dong gio hang khi bam dong
 close_footer.onclick = function () {
   modal.style.display = "none";
 }
+//thong bao da thanh toan
 order.onclick = function () {
   alert("Cảm ơn bạn đã thanh toán đơn hàng")
 }
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
-// Giỏ Hàng
-// xóa cart
-var remove_cart = document.getElementsByClassName("btn-danger");
-for (var i = 0; i < remove_cart.length; i++) {
-  var button = remove_cart[i]
-  button.addEventListener("click", function () {
-    var button_remove = event.target
-    button_remove.parentElement.parentElement.remove()
-    updatecart()
-  })
-}
+//Giỏ Hàng
 // thay đổi số lượng
 var quantity_input = document.getElementsByClassName("cart-quantity-input");
 for (var i = 0; i < quantity_input.length; i++) {
@@ -76,7 +59,8 @@ function addItemToCart(title, price, img) {
       return
     }
   }
-
+//khi add vao gio hang thi no se hien cac thuoc tinh vao trong gio hang,khung
+//dung de lot du lieu cua mang vao khung content
   var cartRowContents = `
   <div class="cart-item cart-column">
       <img class="cart-item-image" src="${img}" width="100" height="100">
@@ -102,7 +86,7 @@ function addItemToCart(title, price, img) {
     updatecart()
   })
 }
-// update cart 
+// update cart add hang vao se tu dong hien gia va tang so luong san pham se tang gia theo
 function updatecart() {
   var cart_item = document.getElementsByClassName("cart-items")[0];
   var cart_rows = cart_item.getElementsByClassName("cart-row");
@@ -117,14 +101,3 @@ function updatecart() {
   }
   document.getElementsByClassName("cart-total-price")[0].innerText = total + 'VNĐ'
 }
-
-// menu mobile
-var btn_menu = document.getElementById("btnmenu");
-btn_menu.addEventListener("click", function () {
-  var item_menu = document.getElementById("menutop");
-  if (item_menu.style.display === "block") {
-    item_menu.style.display = "none";
-  } else {
-    item_menu.style.display = "block";
-  }
-})
