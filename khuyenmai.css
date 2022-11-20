@@ -1,4 +1,9 @@
 
+.main{
+    display: table-row;
+    height: 100%;
+    
+}
 section
 {
     margin-top: 50px;
@@ -41,7 +46,7 @@ article button:hover {
 }
 div .column {
   float: left;
-  width:  250px;
+  width:  300px;
 }
 article a img{
 	width: 150px;
@@ -54,72 +59,77 @@ a {
 
 
 #footer {
-  width: auto;
-  background:rgb(0,0,0,0.79);
-  height: auto;
-  margin-top: 100px;
-  padding-top:57px;
-  padding-right: 100px;
-  margin-left: -100px;
-  display: flex;
-  justify-content: space-around;
-  background-color:rgb(255, 186, 0);
+
+    width: auto;
+    background:rgb(0,0,0,0.79);
+    height: auto;
+    margin-top: 100px;
+    padding-top:57px;
+    padding-right: 100px;
+    margin-left: -100px;
+    display: flex;
+    justify-content: space-around;
+    background-color:rgb(255, 186, 0);
 }
 
 /*#footer {
-  background:rgb(0,0,0,0.79);
-  height: auto;
-  width: auto;
-  margin-left: -100px;
-  margin-top: 338px;
-  padding-top:57px;
-  display: flex;
-  justify-content: space-around;
-  background-color:rgb(255, 186, 0); 
-  font-size: 25px;
+    background:rgb(0,0,0,0.79);
+    height: auto;
+    width: auto;
+    margin-left: -100px;
+    margin-top: 338px;
+    padding-top:57px;
+    display: flex;
+    justify-content: space-around;
+    background-color:rgb(255, 186, 0); 
+    font-size: 25px;
 }*/
 
 
 
 #footer .box1 {
-  width: 250px;
-  color:black;
+    width: 250px;
+    color:black;
 }
 
 #footer .box1 .quick-menu {
-  margin-top:40px;
+    margin-top:40px;
 
 }
 
 
 #footer .box .quick-menu .item{
-  margin-bottom:12px;
-  color: black;
-  font-size: 20px;
+    margin-bottom:12px;
+    color: black;
+    font-size: 20px;
 
 }
 #footer .box1 .quick-menu ,.item a{
-  color:black;
-  text-decoration: none;
+    color:black;
+    text-decoration: none;
 }
 
 
 #footer .box1 form input {
-  width: 250px;
-  height: 50px;
-  background:transparent;
-  padding-left:20px;
-  color:black;
-  margin-top:30px;
-  font-size: 20px;
+    width: 250px;
+    height: 50px;
+    background:transparent;
+    padding-left:20px;
+    color:black;
+    margin-top:30px;
+    font-size: 20px;
 }
 
 #footer .box1 form button {
-  background:#362f2f;
-  box-shadow: 5px 5px 4px rgba(0,0,0.25);
-  background-color:rgb(255, 186, 0) ;
-  margin-top:29px;
-  color:black;
-  font-size: 20px;
+    background:#362f2f;
+    box-shadow: 5px 5px 4px rgba(0,0,0.25);
+    background-color:rgb(255, 186, 0) ;
+    margin-top:29px;
+    color:black;
+    font-size: 20px;
 }
+.item a:hover{
+    color: white;
+}
+
 
