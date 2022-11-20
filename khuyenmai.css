@@ -2,7 +2,7 @@
 .main{
     display: table-row;
     height: 100%;
-    
+
 }
 section
 {
@@ -10,7 +10,9 @@ section
 }
 
 article{
-Background: #FFF;
+    border: solid;
+    border-style: groove;
+background-color: #FFF;
 text-align: center;
 padding-top: 20px;
 }
@@ -131,5 +133,3 @@ a {
 .item a:hover{
     color: white;
 }
-
-
