@@ -15,20 +15,6 @@ close_footer.onclick = function () {
 order.onclick = function () {
   alert("Cảm ơn bạn đã thanh toán đơn hàng")
 }
-//Giỏ Hàng
-// thay đổi số lượng
-var quantity_input = document.getElementsByClassName("cart-quantity-input");
-for (var i = 0; i < quantity_input.length; i++) {
-  var input = quantity_input[i];
-  input.addEventListener("change", function (event) {
-    var input = event.target
-    if (isNaN(input.value) || input.value <= 0) {
-      input.value = 1;
-    }
-    updatecart()
-  })
-}
-
 // Thêm vào giỏ
 var add_cart = document.getElementsByClassName("btn-cart");
 for (var i = 0; i < add_cart.length; i++) {
@@ -43,11 +29,9 @@ for (var i = 0; i < add_cart.length; i++) {
     addItemToCart(title, price, img)
     // Khi thêm sản phẩm vào giỏ hàng thì sẽ hiển thị modal
     modal.style.display = "block";
-    
     updatecart()
   })
 }
-
 function addItemToCart(title, price, img) {
   var cartRow = document.createElement('div')
   cartRow.classList.add('cart-row')
