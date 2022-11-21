@@ -7,7 +7,7 @@
 }
 .row
 {
-    display: table-row;
+ 
     margin-top: 100px;
 }
 
@@ -135,3 +135,4 @@ a {
 .item a:hover{
     color: white;
 }
+
