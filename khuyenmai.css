@@ -2,11 +2,13 @@
 .main{
     display: table-row;
     height: 100%;
+    width:100%;
 
 }
-section
+.row
 {
-    margin-top: 50px;
+    display: table-row;
+    margin-top: 100px;
 }
 
 article{
